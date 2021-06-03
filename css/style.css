@@ -353,11 +353,24 @@
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 400;
   color: var(--basic-blue);
 }
 
 .order-list__item a {
   color: inherit;
+}
+
+.order-list__item a:hover, .order-list__item a:focus {
+  color: var(--basic-red);
+}
+
+.order-list__item a:active {
+  color: var(--basic-greylight);
+}
+
+.main-login__logout-list a:active {
+  color: var(--basic-greylight);
 }
 
 .order-list__circle {
