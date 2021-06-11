@@ -14,12 +14,9 @@
     <header class="main-header">
       <div class="top-bar">
         <div class="top-bar__wrapper container">
-          <a href="index.html">
-            <div class="top-bar__logo"></div>
-          </a>
+          <a class="top-bar__logo" href="index.html"></a>
           <form class="top-bar__search" action="https://echo.htmlacademy.ru" method="get">
-            <p class="top-bar__search-name">Поиск:</p>
-            <input class="top-bar__search-field" type="text" name="search">
+            <input class="top-bar__search-field" placeholder="Поиск:" type="text" name="search">
           </form>
           <ul class="top-bar__cart-list">
             <li class="cart-list__item cart-list__bookmarks">
@@ -493,16 +490,18 @@
           </section>
         </div>
       </div>
-      <section class="catalog__about-products">
-        <div class="catalog__about-products_wrapper container">
-          <h2 class="about-products__title">Пара слов о перфораторах</h2>
-          <p>
-            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
-            В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.<br>
-          </p>
+      <div class="catalog__about-products_wrapper">
+        <div class="container">
+          <section class="catalog__about-products">
+            <h2 class="about-products__title">Пара слов о перфораторах</h2>
+            <p>
+              Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+              Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
+              В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.<br>
+            </p>
+          </section>
         </div>
-      </section>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="main-footer__top-part">
@@ -522,7 +521,7 @@
               <a href="blank.html">Новости</a>
             </li>
             <li class="main-footer__navigation-item">
-              <a href="blank.html">Каталог</a>
+              <a>Каталог</a>
             </li>
             <li class="main-footer__navigation-item">
               <a href="blank.html">Доставка</a>

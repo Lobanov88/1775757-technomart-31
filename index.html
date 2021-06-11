@@ -14,12 +14,9 @@
     <header class="main-header">
       <div class="top-bar">
         <div class="top-bar__wrapper container">
-          <a>
-            <div class="top-bar__logo"></div>
-          </a>
+          <a class="top-bar__logo"></a>
           <form class="top-bar__search" action="https://echo.htmlacademy.ru" method="get">
-            <p class="top-bar__search-name">Поиск:</p>
-            <input class="top-bar__search-field" type="text" name="search">
+            <input class="top-bar__search-field" placeholder="Поиск:" type="text" name="search">
           </form>
           <ul class="top-bar__cart-list">
             <li class="cart-list__item cart-list__bookmarks">
@@ -55,7 +52,7 @@
       <nav class="main-navigation container">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a href="">Главная</a>
+            <a>Главная</a>
           </li>
           <li class="main-navigation__item">
             <a href="blank.html">Компания</a>
@@ -325,7 +322,7 @@
     <footer class="main-footer">
       <div class="main-footer__top-part">
         <div class="top-footer-bar__wrapper container">
-          <a class="footer-logo" href="index.html">
+          <a class="footer-logo">
             <img src="img/logo.png" alt="Логотип компании Техномарт" width="220" height="68">
           </a>
           <p class="main-footer__contacts">
@@ -340,7 +337,7 @@
               <a href="blank.html">Новости</a>
             </li>
             <li class="main-footer__navigation-item">
-              <a href="blank.html">Каталог</a>
+              <a href="catalog.html">Каталог</a>
             </li>
             <li class="main-footer__navigation-item">
               <a href="blank.html">Доставка</a>
@@ -405,18 +402,20 @@
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="feedback__input-name">Ваше имя:</label><br>
-          <input class="feedback__input-contacts" type="text" name="name" id="feedback__input-name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="feedback__input-mail">Ваш e-mail:</label><br>
-          <input class="feedback__input-contacts" type="text" name="mail" id="feedback__input-mail" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="feedback__input-message">Текст письма:</label><br>
-          <textarea class="feedback__input-message" name="message" id="feedback__input-message" rows="5" cols="33">В свободной форме</textarea>
+        <div class="modal-feedback__wrapper">
+          <p>
+            <label for="feedback__input-name">Ваше имя:</label><br>
+            <input class="feedback__input-contacts" type="text" name="name" id="feedback__input-name" placeholder="Имя Фамилия">
           </p>
+          <p>
+            <label for="feedback__input-mail">Ваш e-mail:</label><br>
+            <input class="feedback__input-contacts" type="text" name="mail" id="feedback__input-mail" placeholder="email@example.com">
+          </p>
+          <p class="feedback__input-message_box">
+            <label for="feedback__input-message">Текст письма:</label><br>
+            <textarea class="feedback__input-message" name="message" id="feedback__input-message" rows="5" cols="33" placeholder="В свободной форме"></textarea>
+          </p>
+        </div>
         <div class="modal-feedback__bottom-bar">
           <button class="button button-feedback" type="submit">Отправить</button>
         </div>
@@ -424,7 +423,7 @@
       <button class="modal-close" type="button"></button>
     </section>
     <section class="modal modal-map">
-      <h2 class="visually-hidden">Карта</h2>
+      <!-- <h2 class="visually-hidden">Карта</h2> -->
       <a href="https://yandex.ru/maps/-/CCU4v4V5OC">
         <img src="img/map-popup.png" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П" width="943" height="449">
       </a>
