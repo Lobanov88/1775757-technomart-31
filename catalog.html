@@ -12,7 +12,7 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <div class="top-bar">
+      <div class="main-header__top-bar">
         <div class="top-bar__wrapper container">
           <a class="top-bar__logo" href="index.html"></a>
           <form class="top-bar__search" action="https://echo.htmlacademy.ru" method="get">
@@ -61,7 +61,7 @@
           </ul>
         </section>
       </div>
-      <nav class="main-navigation container">
+      <nav class="main-header__main-navigation container">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
             <a href="index.html">Главная</a>
@@ -87,8 +87,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner-wrapper">
-      <div class="container">
+    <main class="main-inner__wrapper">
+      <div class="main-inner__catalog container">
         <ul class="catalog__breadcrumbs">
           <li class="breadcrumbs__item">
             <a href="index.html">
@@ -108,24 +108,24 @@
         <div class="catalog__title-product-bar">
           <h1 class="catalog__title-product">Перфораторы</h1>
         </div>
-        <div class="main-catalog__wrapper">
-          <section class="filters">
-            <div class="filters__bar">
+        <div class="catalog__wrapper">
+          <section class="catalog__filters">
+            <div class="filters__title-bar">
               <h2 class="filters__title">Фильтр:</h2>
             </div>
             <form class="filters__form" method="get" action="https://echo.htmlacademy.ru">
               <fieldset class="filters__prices">
                 <legend>Цена:</legend>
                 <img src="img/icons/false-slider.svg" alt="диапозон цен" width="220" height="80">
-                <ul class="filter-prices__list">
-                  <li class="filter-prices__item">
-                    <input class="filter-prices__input-price" type="number" value="0" name="min-price">
+                <ul class="filters__prices-list">
+                  <li class="filters__prices-item">
+                    <input class="filters__prices-input" type="number" value="0" name="min-price">
                   </li><!--
-                  --><li class="filter-prices__item">
+                  --><li class="filters__prices-item">
                      —
                   </li><!--
-                  --><li class="filter-prices__item">
-                    <input class="filter-prices__input-price" type="number" value="30000" name="max-price">
+                  --><li class="filters__prices-item">
+                    <input class="filters__prices-input" type="number" value="30000" name="max-price">
                   </li>
                 </ul>
               </fieldset>
@@ -172,7 +172,7 @@
           </section>
           <section class="catalog__products">
             <h2 class="visually-hidden">Список перфораторов</h2>
-            <section class="catalog-products__sorting">
+            <section class="catalog__products-sorting">
               <h3 class="products-sorting__title">Сортировка:</h3>
               <ul class="products-sorting__type-sorting-list">
                 <li>
@@ -198,18 +198,18 @@
                 </li>
               </ul>
             </section>
-            <ul class="catalog-products__products-list">
-              <li class="catalog-products__products-item">
+            <ul class="catalog__products-list">
+              <li class="catalog__products-item">
                 <section class="product-cart">
                   <a class="product-cart__title" href="blank.html">
-                    <h3 class="catalog-item__title">Перфоратор BOSCH<br> BFG 6000</h3>
+                    <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 6000</h3>
                   </a>
-                  <div class="catalog-item__image_wrapper">
+                  <div class="product-cart__image_wrapper">
                     <img class="catalog-item__image" src="img/catalog/boschbfg6000.jpg" alt="Перфоратор BOSCHBFG 6000" width="144" height="128">
                   </div>
-                  <section class="catalog-item-hover">
-                    <a class="catalog-item-hover__buy" href="blank.html">Купить</a>
-                    <a class="catalog-item-hover__bookmarks" href="blank.html">В закладки</a>
+                  <section class="product-cart-hover">
+                    <a class="product-cart-hover__buy" href="blank.html">Купить</a>
+                    <a class="product-cart-hover__bookmarks" href="blank.html">В закладки</a>
                   </section>
                   <div class="product-cart__price">
                     <del class="old-price">30500 Р.</del>
@@ -217,17 +217,17 @@
                   </div>
                 </section>
               </li>
-              <li class="catalog-products__products-item">
+              <li class="catalog__products-item">
                 <section class="product-cart">
                   <a class="product-cart__title" href="blank.html">
-                    <h3 class="catalog-item__title">Перфоратор BOSCH<br> BFG 6000</h3>
+                    <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 6000</h3>
                   </a>
-                  <div class="catalog-item__image_wrapper">
+                  <div class="product-cart__image_wrapper">
                     <img class="catalog-item__image" src="img/catalog/boschbfg6000.jpg" alt="Перфоратор BOSCHBFG 6000" width="144" height="128">
                   </div>
-                  <section class="catalog-item-hover">
-                    <a class="catalog-item-hover__buy" href="blank.html">Купить</a>
-                    <a class="catalog-item-hover__bookmarks" href="blank.html">В закладки</a>
+                  <section class="product-cart-hover">
+                    <a class="product-cart-hover__buy" href="blank.html">Купить</a>
+                    <a class="product-cart-hover__bookmarks" href="blank.html">В закладки</a>
                   </section>
                   <div class="product-cart__price">
                     <del class="old-price">30500 Р.</del>
@@ -235,17 +235,17 @@
                 </div>
                 </section>
               </li>
-              <li class="catalog-products__products-item">
+              <li class="catalog__products-item">
                 <section class="product-cart item-new">
                   <a class="product-cart__title" href="blank.html">
-                    <h3 class="catalog-item__title">Перфоратор BOSCH<br> BFG 6000</h3>
+                    <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 6000</h3>
                   </a>
-                  <div class="catalog-item__image_wrapper">
+                  <div class="product-cart__image_wrapper">
                     <img class="catalog-item__image" src="img/catalog/boschbfg6000.jpg" alt="Перфоратор BOSCHBFG 6000" width="144" height="128">
                   </div>
-                  <section class="catalog-item-hover">
-                    <a class="catalog-item-hover__buy" href="blank.html">Купить</a>
-                    <a class="catalog-item-hover__bookmarks" href="blank.html">В закладки</a>
+                  <section class="product-cart-hover">
+                    <a class="product-cart-hover__buy" href="blank.html">Купить</a>
+                    <a class="product-cart-hover__bookmarks" href="blank.html">В закладки</a>
                   </section>
                   <div class="product-cart__price">
                     <del class="old-price">30500 Р.</del>
@@ -253,17 +253,17 @@
                   </div>
                 </section>
               </li>
-              <li class="catalog-products__products-item">
+              <li class="catalog__products-item">
                 <section class="product-cart item-new">
                   <a class="product-cart__title" href="blank.html">
-                    <h3 class="catalog-item__title">Перфоратор BOSCH<br> BFG 3000</h3>
+                    <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 3000</h3>
                   </a>
-                  <div class="catalog-item__image_wrapper">
+                  <div class="product-cart__image_wrapper">
                     <img class="catalog-item__image" src="img/catalog/boschbfg3000.jpg" alt="Перфоратор BOSCHBFG 3000" width="127" height="112">
                   </div>
-                  <section class="catalog-item-hover">
-                    <a class="catalog-item-hover__buy" href="blank.html">Купить</a>
-                    <a class="catalog-item-hover__bookmarks" href="blank.html">В закладки</a>
+                  <section class="product-cart-hover">
+                    <a class="product-cart-hover__buy" href="blank.html">Купить</a>
+                    <a class="product-cart-hover__bookmarks" href="blank.html">В закладки</a>
                   </section>
                   <div class="product-cart__price">
                     <del class="old-price">22500 Р.</del>
@@ -271,17 +271,17 @@
                   </div>
                 </section>
               </li>
-              <li class="catalog-products__products-item">
+              <li class="catalog__products-item">
                 <section class="product-cart">
                   <a class="product-cart__title" href="blank.html">
-                    <h3 class="catalog-item__title">Перфоратор BOSCH<br> BFG 6000</h3>
+                    <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 6000</h3>
                   </a>
-                  <div class="catalog-item__image_wrapper">
+                  <div class="product-cart__image_wrapper">
                     <img class="catalog-item__image" src="img/catalog/boschbfg6000.jpg" alt="Перфоратор BOSCHBFG 6000" width="144" height="128">
                   </div>
-                  <section class="catalog-item-hover">
-                    <a class="catalog-item-hover__buy" href="blank.html">Купить</a>
-                    <a class="catalog-item-hover__bookmarks" href="blank.html">В закладки</a>
+                  <section class="product-cart-hover">
+                    <a class="product-cart-hover__buy" href="blank.html">Купить</a>
+                    <a class="product-cart-hover__bookmarks" href="blank.html">В закладки</a>
                   </section>
                   <div class="product-cart__price">
                     <del class="old-price">30500 Р.</del>
@@ -289,17 +289,17 @@
                   </div>
                 </section>
               </li>
-              <li class="catalog-products__products-item">
+              <li class="catalog__products-item">
                 <section class="product-cart item-new">
                   <a class="product-cart__title" href="blank.html">
-                    <h3 class="catalog-item__title">Перфоратор BOSCH<br> BFG 2000</h3>
+                    <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 2000</h3>
                   </a>
-                  <div class="catalog-item__image_wrapper">
+                  <div class="product-cart__image_wrapper">
                     <img class="catalog-item__image" src="img/catalog/boschbfg2000.jpg" alt="Перфоратор BOSCHBFG 6000" width="127" height="112">
                   </div>
-                  <section class="catalog-item-hover">
-                    <a class="catalog-item-hover__buy" href="blank.html">Купить</a>
-                    <a class="catalog-item-hover__bookmarks" href="blank.html">В закладки</a>
+                  <section class="product-cart-hover">
+                    <a class="product-cart-hover__buy" href="blank.html">Купить</a>
+                    <a class="product-cart-hover__bookmarks" href="blank.html">В закладки</a>
                   </section>
                   <div class="product-cart__price">
                     <del class="old-price"></del>
@@ -307,17 +307,17 @@
                   </div>
                 </section>
               </li>
-              <li class="catalog-products__products-item">
+              <li class="catalog__products-item">
                 <section class="product-cart item-new">
                   <a class="product-cart__title" href="blank.html">
-                    <h3 class="catalog-item__title">Перфоратор BOSCH<br> BFG 3000</h3>
+                    <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 3000</h3>
                   </a>
-                  <div class="catalog-item__image_wrapper">
+                  <div class="product-cart__image_wrapper">
                     <img class="catalog-item__image" src="img/catalog/boschbfg3000.jpg" alt="Перфоратор BOSCHBFG 3000" width="127" height="112">
                   </div>
-                  <section class="catalog-item-hover">
-                    <a class="catalog-item-hover__buy" href="blank.html">Купить</a>
-                    <a class="catalog-item-hover__bookmarks" href="blank.html">В закладки</a>
+                  <section class="product-cart-hover">
+                    <a class="product-cart-hover__buy" href="blank.html">Купить</a>
+                    <a class="product-cart-hover__bookmarks" href="blank.html">В закладки</a>
                   </section>
                   <div class="product-cart__price">
                     <del class="old-price">22500 Р.</del>
@@ -325,17 +325,17 @@
                   </div>
                 </section>
               </li>
-              <li class="catalog-products__products-item">
+              <li class="catalog__products-item">
                 <section class="product-cart">
                   <a class="product-cart__title" href="blank.html">
-                    <h3 class="catalog-item__title">Перфоратор BOSCH<br> BFG 6000</h3>
+                    <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 6000</h3>
                   </a>
-                  <div class="catalog-item__image_wrapper">
+                  <div class="product-cart__image_wrapper">
                     <img class="catalog-item__image" src="img/catalog/boschbfg6000.jpg" alt="Перфоратор BOSCHBFG 6000" width="144" height="128">
                   </div>
-                  <section class="catalog-item-hover">
-                    <a class="catalog-item-hover__buy" href="blank.html">Купить</a>
-                    <a class="catalog-item-hover__bookmarks" href="blank.html">В закладки</a>
+                  <section class="product-cart-hover">
+                    <a class="product-cart-hover__buy" href="blank.html">Купить</a>
+                    <a class="product-cart-hover__bookmarks" href="blank.html">В закладки</a>
                   </section>
                   <div class="product-cart__price">
                     <del class="old-price">30500 Р.</del>
@@ -343,17 +343,17 @@
                   </div>
                 </section>
               </li>
-              <li class="catalog-products__products-item">
+              <li class="catalog__products-item">
                 <section class="product-cart item-new">
                   <a class="product-cart__title" href="blank.html">
-                    <h3 class="catalog-item__title">Перфоратор BOSCH<br> BFG 2000</h3>
+                    <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 2000</h3>
                   </a>
-                  <div class="catalog-item__image_wrapper">
+                  <div class="product-cart__image_wrapper">
                     <img class="catalog-item__image" src="img/catalog/boschbfg2000.jpg" alt="Перфоратор BOSCHBFG 6000" width="127" height="112">
                   </div>
-                  <section class="catalog-item-hover">
-                    <a class="catalog-item-hover__buy" href="blank.html">Купить</a>
-                    <a class="catalog-item-hover__bookmarks" href="blank.html">В закладки</a>
+                  <section class="product-cart-hover">
+                    <a class="product-cart-hover__buy" href="blank.html">Купить</a>
+                    <a class="product-cart-hover__bookmarks" href="blank.html">В закладки</a>
                   </section>
                   <div class="product-cart__price">
                     <del class="old-price"></del>
@@ -362,18 +362,18 @@
                 </section>
               </li>
             </ul>
-            <ul class="catalog-products__pagintation">
+            <ul class="catalog__pagination">
               <li>
-                <a class="button-pagination button-pagination-current">1</a>
+                <a class="pagination__button pagination__button-current ">1</a>
               </li>
               <li>
-                <a class="button-pagination" href="">2</a>
+                <a class="pagination__button" href="">2</a>
               </li>
               <li>
-                <a class="button-pagination" href="">3</a>
+                <a class="pagination__button" href="">3</a>
               </li>
               <li>
-                <a class="button-pagination button-pagination-next" href="">Следующая</a>
+                <a class="pagination__button pagination__button-next" href="">Следующая</a>
               </li>
             </ul>
           </section>
@@ -382,7 +382,7 @@
       <div class="catalog__about-products_wrapper">
         <div class="container">
           <section class="catalog__about-products">
-            <h2 class="about-products__title">Пара слов о перфораторах</h2>
+            <h2 class="catalog__about-products-title">Пара слов о перфораторах</h2>
             <p>
               Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
               Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
@@ -394,8 +394,8 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__top-part">
-        <div class="top-footer-bar__wrapper container">
-          <a class="footer-logo" href="index.html">
+        <div class="main-footer_top-bar-wrapper container">
+          <a class="main-footer__logo" href="index.html">
             <img src="img/logo.png" alt="Логотип компании Техномарт" width="220" height="68">
           </a>
           <p class="main-footer__contacts">
@@ -436,7 +436,7 @@
         </div>
       </div>
       <div class="main-footer__bottom-part">
-        <div class="bottom-footer-bar__wrapper container">
+        <div class="main-footer__bottom-bar-wrapper container">
           <p class="main-footer__copyright">
             © 2010–2021 Компания «Техномарт»<br>
             Все права защищены
