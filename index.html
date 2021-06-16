@@ -16,6 +16,7 @@
         <div class="top-bar__wrapper container">
           <a class="top-bar__logo"></a>
           <form class="top-bar__search" action="https://echo.htmlacademy.ru" method="get">
+            <svg class="top-bar__search-icon" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="top-bar__search-icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M13.46 12.04L17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 111.41-1.41zM7.5 2a5.5 5.5 0 10.01 11.01A5.5 5.5 0 007.5 2z" fill="#fff"/></svg>
             <input class="top-bar__search-field" placeholder="Поиск:" type="text" name="search">
           </form>
           <ul class="top-bar__cart-list">
@@ -34,14 +35,17 @@
       <div class="main-header__middle-part container">
         <p class="main-header__description">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
         <p class="main-header__contacts">
-          <a class="main-header__phone" href="tel:+78005558628">+7 800 555-86-28</a><br>
+          <a class="main-header__phone" href="tel:+78005558628">+7 800 555-86-28</a>
           г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
         </p>
         <section class="main-header__main-login">
           <h2 class="visually-hidden">Регистрация и авторизация</h2>
           <ul class="main-login__login-list">
             <li class="login-list__item login-list__login">
-              <a href="blank.html">Войти</a>
+              <a href="blank.html">
+                <svg width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="login-list__login-path" d="M14.17 8.5L5.7 0v6H0v5h5.71v6l8.46-8.5z" fill="#C5C5C5"/><path d="M16.18 15.01h-4.79V17h4.79c2.07 0 2.86-1.81 2.88-3.03V3.03C19.04 1.8 18.26 0 16.18 0h-4.79v1.99h4.79c.8 0 .94.68.96 1.06v10.9c-.02.38-.16 1.06-.96 1.06z" fill="#C5C5C5"/></svg>
+                Войти
+              </a>
             </li>
             <li class="login-list__item login-list__registration">
               <a href="blank.html">Регистрация</a>
@@ -79,42 +83,46 @@
       <h1 class="visually-hidden">Интернет-магазин строительных товаров и инструментов для ремонта Техномарт</h1>
       <section class="main-index__promo-block container">
         <h2 class="visually-hidden">Категории товаров</h2>
-          <section class="promo-block__item promo-block__promo-materials item-new">
-            <h3>Материалы</h3>
-            <a class="promo-button" href="catalog.html">На любой вкус</a>
-          </section>
-          <section class="promo-block__item promo-block__promo-instrument">
-            <h3>Инструмент</h3>
-            <a class="promo-button" href="catalog.html">На все случаи</a>
-          </section>
-          <section class="promo-block__item promo-block__promo-technic">
-            <h3>Техника</h3>
-            <a class="promo-button" href="catalog.html">Для стройки</a>
-          </section>
-          <section class="promo-block__item promo-block__promo-sale">
-            <h3>Скидки 50%</h3>
-            <a class="promo-button" href="catalog.html">На 350 товаров</a>
-          </section>
-          <section class="promo-block__item promo-block__promo-delivery">
-            <h3>Доставка</h3>
-            <a class="promo-button" href="blank.html">Бесплатно</a>
-          </section>
-        <div class="promo-block__promo-slider">
-          <section class="promo-slider__section promo-slider__hammer-drills">
-            <button class="promo-slider__arrow-previous" type="button"></button>
-            <h3 class="promo-slider__title">Перфораторы</h3>
-            <p class="promo-slider__text">Настоящие мужские игрушки</p>
-            <a class="button" href="catalog.html">Открыть каталог</a>
-            <button class="promo-slider__arrow-next" type="button"></button>
-          </section>
-          <section class="promo-slider__section promo-slider__drills">
-            <button class="promo-slider__arrow-previous" type="button"></button>
-            <h3 class="promo-slider__title">Дрели</h3>
-            <p class="promo-slider__text">Соседям на радость!</p>
-            <a class="button" href="catalog.html">Открыть каталог</a>
-            <button class="promo-slider__arrow-next" type="button"></button>
-          </section>
-        </div>
+        <section class="promo-block__item promo-block__promo-materials item-new">
+          <h3>Материалы</h3>
+          <a class="promo-button" href="catalog.html">На любой вкус</a>
+        </section>
+        <section class="promo-block__item promo-block__promo-instrument">
+          <h3>Инструмент</h3>
+          <a class="promo-button" href="catalog.html">На все случаи</a>
+        </section>
+        <section class="promo-block__item promo-block__promo-technic">
+          <h3>Техника</h3>
+          <a class="promo-button" href="catalog.html">Для стройки</a>
+        </section>
+        <section class="promo-block__item promo-block__promo-sale">
+          <h3>Скидки 50%</h3>
+          <a class="promo-button" href="catalog.html">На 350 товаров</a>
+        </section>
+        <section class="promo-block__item promo-block__promo-delivery">
+          <h3>Доставка</h3>
+          <a class="promo-button" href="blank.html">Бесплатно</a>
+        </section>
+        <section class="promo-block__promo-slider">
+          <ul class="promo-slider__slider-list">
+            <li class="promo-slider__slider-item promo-slider__slide promo-slider__slide-current promo-slider__hammer-drills">
+              <h3 class="promo-slider__title">Перфораторы</h3>
+              <p class="promo-slider__text">Настоящие мужские игрушки</p>
+              <a class="button" href="catalog.html">Открыть каталог</a>
+            </li>
+            <li class="promo-slider__slider-item promo-slider__slide promo-slider__drills">
+              <h3 class="promo-slider__title">Дрели</h3>
+              <p class="promo-slider__text">Соседям на радость!</p>
+              <a class="button" href="catalog.html">Открыть каталог</a>
+            </li>
+            <button class="promo-slider__arrow-previous" type="button" aria-label="Предыдущий слайд"></button>
+            <button class="promo-slider__arrow-next" type="button" aria-label="Следующий слайд"></button>
+          </ul>
+          <div class="promo-slider__slider-controls">
+            <button type="button" aria-label="Первый слайд"></button>
+            <button class="promo-slider__slider-controls_current" type="button" aria-label="Второй слайд"></button>
+          </div>
+        </section>
       </section>
       <section class="popular-products container">
         <div class="main-index__section-bar">
@@ -130,10 +138,10 @@
               <div class="product-cart__image_wrapper">
               <img class="catalog-item__image" src="img/catalog/boschbfg9000.jpg" alt="Перфоратор BOSCHBFG 9000" width="184" height="164">
               </div>
-              <section class="product-cart-hover">
+              <div class="product-cart-hover">
                 <a class="product-cart-hover__buy" href="blank.html">Купить</a>
                 <a class="product-cart-hover__bookmarks" href="blank.html">В закладки</a>
-              </section>
+              </div>
               <div class="product-cart__price">
                 <del class="old-price">32500 Р.</del>
                 <button class="angle-button" type="button">25500 Р.</button>
@@ -148,10 +156,10 @@
               <div class="product-cart__image_wrapper">
               <img class="catalog-item__image" src="img/catalog/boschbfg3000.jpg" alt="Перфоратор BOSCHBFG 3000" width="127" height="112">
               </div>
-              <section class="product-cart-hover">
+              <div class="product-cart-hover">
                 <a class="product-cart-hover__buy" href="blank.html">Купить</a>
                 <a class="product-cart-hover__bookmarks" href="blank.html">В закладки</a>
-              </section>
+              </div>
               <div class="product-cart__price">
                 <del class="old-price">22500 Р.</del>
                 <button class="angle-button">15500 Р.</button>
@@ -166,10 +174,10 @@
               <div class="product-cart__image_wrapper">
               <img class="catalog-item__image" src="img/catalog/boschbfg6000.jpg" alt="Перфоратор BOSCHBFG 6000" width="144" height="128">
               </div>
-              <section class="product-cart-hover">
+              <div class="product-cart-hover">
                 <a class="product-cart-hover__buy" href="blank.html">Купить</a>
                 <a class="product-cart-hover__bookmarks" href="blank.html">В закладки</a>
-              </section>
+              </div>
               <div class="product-cart__price">
                 <del class="old-price">30500 Р.</del>
                 <button class="angle-button">25500 Р.</button>
@@ -184,10 +192,10 @@
               <div class="product-cart__image_wrapper">
               <img class="catalog-item__image" src="img/catalog/boschbfg2000.jpg" alt="Перфоратор BOSCHBFG 6000" width="127" height="112">
               </div>
-              <section class="product-cart-hover">
+              <div class="product-cart-hover">
                 <a class="product-cart-hover__buy" href="blank.html">Купить</a>
                 <a class="product-cart-hover__bookmarks" href="blank.html">В закладки</a>
-              </section>
+              </div>
               <div class="product-cart__price">
                 <del class="old-price"></del>
                 <button class="angle-button">12500 Р.</button>
@@ -316,7 +324,7 @@
         </section>
         <section class="main-contacts">
           <h2 class="main-contacts__title">Контакты</h2>
-          <p class="about-company__paragraph">
+          <p class="about-company__paragraph-map">
             Вы можете забрать товар сами,<br>
             заехав в наш офис:
           </p>
@@ -434,9 +442,9 @@
 
 
     <section class="modal modal-map">
-      <!-- <h2 class="visually-hidden">Карта</h2> -->
+      <h2 class="visually-hidden">Карта</h2>
       <a href="https://yandex.ru/maps/-/CCU4v4V5OC">
-        <img src="img/big-map.png" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П" width="943" height="449">
+        <img src="img/map-popup.png" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П" width="943" height="449">
       </a>
       <button class="modal-close" type="button"></button>
     </section>
