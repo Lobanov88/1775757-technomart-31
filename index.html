@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Интернет-магазин Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -136,7 +136,7 @@
                 <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 9000</h3>
               </a>
               <div class="product-cart__image_wrapper">
-              <img class="catalog-item__image" src="img/catalog/boschbfg9000.jpg" alt="Перфоратор BOSCHBFG 9000" width="184" height="164">
+              <img class="catalog-item__image" src="img/catalog/boschbfg9000.jpg" alt="Перфоратор синего цвета" width="184" height="164">
               </div>
               <div class="product-cart-hover">
                 <a class="product-cart-hover__buy" href="blank.html">Купить</a>
@@ -154,7 +154,7 @@
                 <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 3000</h3>
               </a>
               <div class="product-cart__image_wrapper">
-              <img class="catalog-item__image" src="img/catalog/boschbfg3000.jpg" alt="Перфоратор BOSCHBFG 3000" width="127" height="112">
+              <img class="catalog-item__image" src="img/catalog/boschbfg3000.jpg" alt="Перфоратор синего цвета" width="127" height="112">
               </div>
               <div class="product-cart-hover">
                 <a class="product-cart-hover__buy" href="blank.html">Купить</a>
@@ -172,7 +172,7 @@
                 <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 6000</h3>
               </a>
               <div class="product-cart__image_wrapper">
-              <img class="catalog-item__image" src="img/catalog/boschbfg6000.jpg" alt="Перфоратор BOSCHBFG 6000" width="144" height="128">
+              <img class="catalog-item__image" src="img/catalog/boschbfg6000.jpg" alt="Перфоратор синего цвета" width="144" height="128">
               </div>
               <div class="product-cart-hover">
                 <a class="product-cart-hover__buy" href="blank.html">Купить</a>
@@ -190,7 +190,7 @@
                 <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 2000</h3>
               </a>
               <div class="product-cart__image_wrapper">
-              <img class="catalog-item__image" src="img/catalog/boschbfg2000.jpg" alt="Перфоратор BOSCHBFG 6000" width="127" height="112">
+              <img class="catalog-item__image" src="img/catalog/boschbfg2000.jpg" alt="Перфоратор синего цвета" width="127" height="112">
               </div>
               <div class="product-cart-hover">
                 <a class="product-cart-hover__buy" href="blank.html">Купить</a>
@@ -420,36 +420,28 @@
       <form action="https://echo.htmlacademy.ru" method="post">
         <div class="modal-feedback__wrapper">
           <p>
-            <label for="feedback__input-name">Ваше имя:</label><br>
+            <label class="modal-feedback__label-contacts" for="feedback__input-name">Ваше имя:</label><br>
             <input class="modal-feedback__input-contacts" type="text" name="name" id="feedback__input-name" placeholder="Имя Фамилия">
           </p>
           <p>
-            <label for="feedback__input-mail">Ваш e-mail:</label><br>
+            <label class="modal-feedback__label-contacts" for="feedback__input-mail">Ваш e-mail:</label><br>
             <input class="modal-feedback__input-contacts" type="text" name="mail" id="feedback__input-mail" placeholder="email@example.com">
           </p>
           <p class="modal-feedback__input-message_box">
-            <label for="modal-feedback__input-message">Текст письма:</label><br>
-            <textarea class="modal-feedback__input-message" name="message" id="modal-feedback__input-message" rows="5" cols="33" placeholder="В свободной форме"></textarea>
+            <label class="modal-feedback__label-message" for="modal-feedback__input-message">Текст письма:</label><br>
+            <textarea class="modal-feedback__input-message" name="message" id="modal-feedback__input-message" rows="4" cols="33" placeholder="В свободной форме"></textarea>
           </p>
         </div>
         <div class="modal-feedback__bottom-bar">
           <button class="button button-feedback" type="submit">Отправить</button>
         </div>
       </form>
-      <button class="modal-close" type="button"></button>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
-
-
-
     <section class="modal modal-map">
       <h2 class="visually-hidden">Карта</h2>
-      <a href="https://yandex.ru/maps/-/CCU4v4V5OC">
-        <img src="img/map-popup.png" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П" width="943" height="449">
-      </a>
-      <button class="modal-close" type="button"></button>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1e616be82b36a7f56e74ebe89cec8bc8d0d61de70beef80a223f89a892ac7b4&amp;source=constructor" width="943" height="442" frameborder="0" aria-label="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П"></iframe>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
-
-
-
   </body>
 </html>

@@ -941,6 +941,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
   position: absolute;
   top: 38px;
   left: 41px;
@@ -973,6 +974,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
   position: absolute;
   top: 86px;
   left: 41px;
@@ -1804,10 +1806,14 @@ a.pagination__button-current {
   box-sizing: border-box;
   position: relative;
   box-shadow: 0px 20px 40px rgba(41, 52, 73, 0.75);
-
-/*  */
-  margin: 200px;
-/*  */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: var(--basic-white);
+  z-index: 10;
 }
 
 .modal-feedback {
@@ -1815,20 +1821,30 @@ a.pagination__button-current {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 400;
+  top: auto;
+  bottom: 352px;
+
+  display: none;
+}
+
+.modal-feedback__label-contacts {
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .modal-feedback__wrapper {
   display: grid;
   grid-template-columns: 220px 220px;
   grid-template-rows: auto auto;
-  gap: 20px;
-  padding: 44px 80px 37px;
+  column-gap: 20px;
+  row-gap: 16px;
+  padding: 40px 80px 37px;
 }
 
 .modal-feedback .modal-close {
-  position: absolute;
   right: 11px;
-  top: 21px;
+  top: 12px;
 }
 
 .modal-map {
@@ -1836,6 +1852,10 @@ a.pagination__button-current {
   width: 943px;
   height: 449px;
   padding: 0;
+  top: 255px;
+  bottom: auto;
+
+  display: none;
 }
 
 .modal-map a {
@@ -1855,18 +1875,19 @@ a.pagination__button-current {
 }
 
 .modal-map .modal-close {
-  position: absolute;
-  top: 17px;
-  right: 10px;
+  top: 10px;
+  right: 12px;
 }
 
 .modal-close {
+  position: absolute;
   width: 21px;
   height: 21px;
   border: none;
   background-color: transparent;
   background-image: url("../img/icons/icon-close.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .modal-feedback__bottom-bar {
@@ -1880,18 +1901,27 @@ a.pagination__button-current {
 
 .modal-feedback__input-contacts {
   width: 220px;
+  box-sizing: border-box;
+  font-family: "PT Sans", "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 4px 10px;
+  color: var(--old-price);
+}
+
+.modal-feedback__input-message {
+  width: 460px;
+  box-sizing: border-box;
+  padding: 5px 10px;
   font-family: "PT Sans", "Trebuchet MS", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: var(--old-price);
 }
 
-.modal-feedback__input-message {
-  width: 460px;
-  font-family: "PT Sans", "Trebuchet MS", sans-serif;
-  font-size: 13px;
-  line-height: 24px;
-  color: var(--old-price);
+.modal-feedback__label-message {
+  display: inline-block;
+  margin-bottom: 11px;
 }
 
 .modal-feedback__input-message_box {
@@ -1901,7 +1931,11 @@ a.pagination__button-current {
 .modal-add-to-cart {
   width: 620px;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 66px;
+  top: 255px;
+  bottom: auto;
+
+  display: none;
 }
 
 .modal-add-to-cart__bottom-bar {
@@ -1917,9 +1951,8 @@ a.pagination__button-current {
 }
 
 .modal-add-to-cart .modal-close {
-  position: absolute;
-  right: 11px;
-  top: 18px;
+  right: 10px;
+  top: 12px;
 }
 
 .add-to-cart__title {
@@ -1927,14 +1960,14 @@ a.pagination__button-current {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  margin-bottom: 64px;
+  margin-bottom: 66px;
 }
 
 .add-to-cart__title::before {
   content: url(../img/icons/icon-mark.svg);
   position: absolute;
   left: 81px;
-  top: 55px;
+  top: 50px;
 }
 
 .modal-add-to-cart__bottom-bar .button {
@@ -2088,6 +2121,7 @@ a.pagination__button-current {
 .button-feedback {
   width: 460px;
   border: none;
+  cursor: pointer;
 }
 
 .button-filters {
