@@ -1160,7 +1160,7 @@
   top: 10px;
   left: -36px;
   background-image: url(../img/horizontal-short-line.svg);
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-position: center center;
 }
 
@@ -1858,25 +1858,13 @@ a.pagination__button-current {
   display: none;
 }
 
-.modal-map a {
-  display: block;
-  width: 943px;
-  height: 449px;
-  box-sizing: border-box;
-  padding: 0;
-}
-
-.modal-map img {
-  display: block;
-  box-sizing: border-box;
-  width: 943px;
-  height: 449px;
-  padding: 0;
-}
-
 .modal-map .modal-close {
   top: 10px;
   right: 12px;
+}
+
+.modal-map iframe {
+  border: none;
 }
 
 .modal-close {
