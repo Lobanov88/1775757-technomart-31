@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link href="css/normalize.css" rel="stylesheet">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
@@ -45,7 +46,7 @@
               <svg class="logout-list__img-user" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="logout-list__img-user-path" d="M17.88 14.17c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 001.86-4.29C14.02 2.28 12.22 0 10 0 7.78 0 5.98 2.28 5.98 5.08c0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 14.9 0 18 0 18h20s.02-3.1-2.12-3.83z" fill="#C5C5C5"/></svg>
               Равшан Джамшутович
             </a>
-            <a class="logout-list__user-logout" href="blank.html">
+            <a class="logout-list__user-logout" href="blank.html" aria-label="Выйти из профиля">
               <svg class="logout-list__img-logout" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="logout-list__img-logout-path" d="M20 8.5L11.12 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5"/><path class="logout-list__img-logout-path" d="M2.1 13.95V3.05c.02-.38.18-1.06 1.02-1.06h5.02V0H3.12C.94 0 .12 1.81.09 3.03v10.94C.1 15.2.94 17 3.12 17h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06z" fill="#C5C5C5"/></svg>
             </a>
           </div>
@@ -122,11 +123,11 @@
                   </div>
                   <div class="price-controls">
                     <label class="min-price">
-                      <input type="number" name="min-price" value="0">
+                      <input type="number" name="min-price" value="0" aria-label="Минимальная цена">
                     </label>
                     <span>&mdash;</span>
                     <label class="max-price">
-                      <input type="number" name="max-price" value="30000">
+                      <input type="number" name="max-price" value="30000" aria-label="Максимальная цена">
                     </label>
                   </div>
                 </div>
@@ -134,23 +135,23 @@
               <fieldset class="filters__set filters__set-providers">
                 <legend>Производители:</legend>
                 <ul class="filters-list">
-                  <li class="filters-item">
+                  <li class="filters-item filters-item-provider">
                     <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" id="filter__bosch" checked>
                     <label class="filters__labels" for="filter__bosch">Bosch</label>
                   </li>
-                  <li class="filters-item">
+                  <li class="filters-item filters-item-provider">
                     <input class="visually-hidden filter-input-checkbox" type="checkbox" name="interscol" id="filter__interscol">
                     <label class="filters__labels" for="filter__interscol">Интерскол</label>
                   </li>
-                  <li class="filters-item">
+                  <li class="filters-item filters-item-provider">
                     <input class="visually-hidden filter-input-checkbox" type="checkbox" name="makita" id="filter__makita" checked>
                     <label class="filters__labels" for="filter__makita">Makita</label>
                   </li>
-                  <li class="filters-item">
+                  <li class="filters-item filters-item-provider">
                     <input class="visually-hidden filter-input-checkbox" type="checkbox" name="dewalt" id="filter__dewalt">
                     <label class="filters__labels" for="filter__dewalt">DeWalt</label>
                   </li>
-                  <li class="filters-item">
+                  <li class="filters-item filters-item-provider">
                     <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hitachi" id="filter__hitachi">
                     <label class="filters__labels" for="filter__hitachi">Hitachi</label>
                   </li>
@@ -197,7 +198,7 @@
                     <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 6000</h3>
                   </a>
                   <div class="product-cart__image_wrapper">
-                    <img class="catalog-item__image" src="img/catalog/boschbfg6000.jpg" alt="Перфоратор синего цвета" width="144" height="128">
+                    <img class="catalog-item__image" src="img/catalog/boschbfg6000.jpg" alt="Перфоратор синего цвета с аккумулятором" width="144" height="128">
                   </div>
                   <div class="product-cart-hover">
                     <button class="product-cart-hover__buy" type="button">Купить</button>
@@ -205,7 +206,7 @@
                   </div>
                   <div class="product-cart__price">
                     <del class="old-price">30500 Р.</del>
-                    <button class="angle-button">25500 Р.</button>
+                    <button class="angle-button" type="button" aria-label="Добавить товар в корзину">25500 Р.</button>
                   </div>
                 </section>
               </li>
@@ -215,7 +216,7 @@
                     <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 6000</h3>
                   </a>
                   <div class="product-cart__image_wrapper">
-                    <img class="catalog-item__image" src="img/catalog/boschbfg6000.jpg" alt="Перфоратор синего цвета" width="144" height="128">
+                    <img class="catalog-item__image" src="img/catalog/boschbfg6000.jpg" alt="Перфоратор синего цвета с аккумулятором" width="144" height="128">
                   </div>
                   <div class="product-cart-hover">
                     <button class="product-cart-hover__buy" type="button">Купить</button>
@@ -223,7 +224,7 @@
                   </div>
                   <div class="product-cart__price">
                     <del class="old-price">30500 Р.</del>
-                    <button class="angle-button">25500 Р.</button>
+                    <button class="angle-button" type="button" aria-label="Добавить товар в корзину">25500 Р.</button>
                 </div>
                 </section>
               </li>
@@ -233,7 +234,7 @@
                     <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 6000</h3>
                   </a>
                   <div class="product-cart__image_wrapper">
-                    <img class="catalog-item__image" src="img/catalog/boschbfg6000.jpg" alt="Перфоратор синего цвета" width="144" height="128">
+                    <img class="catalog-item__image" src="img/catalog/boschbfg6000.jpg" alt="Перфоратор синего цвета с аккумулятором" width="144" height="128">
                   </div>
                   <div class="product-cart-hover">
                     <button class="product-cart-hover__buy" type="button">Купить</button>
@@ -241,7 +242,7 @@
                   </div>
                   <div class="product-cart__price">
                     <del class="old-price">30500 Р.</del>
-                    <button class="angle-button">25500 Р.</button>
+                    <button class="angle-button" type="button" aria-label="Добавить товар в корзину">25500 Р.</button>
                   </div>
                 </section>
               </li>
@@ -251,7 +252,7 @@
                     <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 3000</h3>
                   </a>
                   <div class="product-cart__image_wrapper">
-                    <img class="catalog-item__image" src="img/catalog/boschbfg3000.jpg" alt="Перфоратор синего цвета" width="127" height="112">
+                    <img class="catalog-item__image" src="img/catalog/boschbfg3000.jpg" alt="Перфоратор синего цвета с аккумулятором" width="127" height="112">
                   </div>
                   <div class="product-cart-hover">
                     <button class="product-cart-hover__buy" type="button">Купить</button>
@@ -259,7 +260,7 @@
                   </div>
                   <div class="product-cart__price">
                     <del class="old-price">22500 Р.</del>
-                    <button class="angle-button">15500 Р.</button>
+                    <button class="angle-button" type="button" aria-label="Добавить товар в корзину">15500 Р.</button>
                   </div>
                 </section>
               </li>
@@ -269,7 +270,7 @@
                     <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 6000</h3>
                   </a>
                   <div class="product-cart__image_wrapper">
-                    <img class="catalog-item__image" src="img/catalog/boschbfg6000.jpg" alt="Перфоратор синего цвета" width="144" height="128">
+                    <img class="catalog-item__image" src="img/catalog/boschbfg6000.jpg" alt="Перфоратор синего цвета с аккумулятором" width="144" height="128">
                   </div>
                   <div class="product-cart-hover">
                     <button class="product-cart-hover__buy" type="button">Купить</button>
@@ -277,7 +278,7 @@
                   </div>
                   <div class="product-cart__price">
                     <del class="old-price">30500 Р.</del>
-                    <button class="angle-button">25500 Р.</button>
+                    <button class="angle-button" type="button" aria-label="Добавить товар в корзину">25500 Р.</button>
                   </div>
                 </section>
               </li>
@@ -287,7 +288,7 @@
                     <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 2000</h3>
                   </a>
                   <div class="product-cart__image_wrapper">
-                    <img class="catalog-item__image" src="img/catalog/boschbfg2000.jpg" alt="Перфоратор синего цвета" width="127" height="112">
+                    <img class="catalog-item__image" src="img/catalog/boschbfg2000.jpg" alt="Перфоратор синего цвета с аккумулятором" width="127" height="112">
                   </div>
                   <div class="product-cart-hover">
                     <button class="product-cart-hover__buy" type="button">Купить</button>
@@ -295,7 +296,7 @@
                   </div>
                   <div class="product-cart__price">
                     <del class="old-price"></del>
-                    <button class="angle-button">12500 Р.</button>
+                    <button class="angle-button" type="button" aria-label="Добавить товар в корзину">12500 Р.</button>
                   </div>
                 </section>
               </li>
@@ -305,7 +306,7 @@
                     <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 3000</h3>
                   </a>
                   <div class="product-cart__image_wrapper">
-                    <img class="catalog-item__image" src="img/catalog/boschbfg3000.jpg" alt="Перфоратор синего цвета" width="127" height="112">
+                    <img class="catalog-item__image" src="img/catalog/boschbfg3000.jpg" alt="Перфоратор синего цвета с аккумулятором" width="127" height="112">
                   </div>
                   <div class="product-cart-hover">
                     <button class="product-cart-hover__buy" type="button">Купить</button>
@@ -313,7 +314,7 @@
                   </div>
                   <div class="product-cart__price">
                     <del class="old-price">22500 Р.</del>
-                    <button class="angle-button">15500 Р.</button>
+                    <button class="angle-button" type="button" aria-label="Добавить товар в корзину">15500 Р.</button>
                   </div>
                 </section>
               </li>
@@ -323,7 +324,7 @@
                     <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 6000</h3>
                   </a>
                   <div class="product-cart__image_wrapper">
-                    <img class="catalog-item__image" src="img/catalog/boschbfg6000.jpg" alt="Перфоратор синего цвета" width="144" height="128">
+                    <img class="catalog-item__image" src="img/catalog/boschbfg6000.jpg" alt="Перфоратор синего цвета с аккумулятором" width="144" height="128">
                   </div>
                   <div class="product-cart-hover">
                     <button class="product-cart-hover__buy" type="button">Купить</button>
@@ -331,7 +332,7 @@
                   </div>
                   <div class="product-cart__price">
                     <del class="old-price">30500 Р.</del>
-                    <button class="angle-button">25500 Р.</button>
+                    <button class="angle-button" type="button" aria-label="Добавить товар в корзину">25500 Р.</button>
                   </div>
                 </section>
               </li>
@@ -341,7 +342,7 @@
                     <h3 class="product-cart__title-writing">Перфоратор BOSCH<br> BFG 2000</h3>
                   </a>
                   <div class="product-cart__image_wrapper">
-                    <img class="catalog-item__image" src="img/catalog/boschbfg2000.jpg" alt="Перфоратор синего цвета" width="127" height="112">
+                    <img class="catalog-item__image" src="img/catalog/boschbfg2000.jpg" alt="Перфоратор синего цвета с аккумулятором" width="127" height="112">
                   </div>
                   <div class="product-cart-hover">
                     <button class="product-cart-hover__buy" type="button">Купить</button>
@@ -349,7 +350,7 @@
                   </div>
                   <div class="product-cart__price">
                     <del class="old-price"></del>
-                    <button class="angle-button">12500 Р.</button>
+                    <button class="angle-button" type="button" aria-label="Добавить товар в корзину">12500 Р.</button>
                   </div>
                 </section>
               </li>
@@ -437,18 +438,18 @@
             <h2 class="visually-hidden">Социальные сети</h2>
             <ul class="main-footer__social-list">
               <li>
-                <a href="">
-                  <div class="social-button button-vk"></div>
+                <a href="" aria-label="Вконтакте">
+                  <div class="social-button button-vk" aria-hidden="true"></div>
                 </a>
               </li>
               <li>
-                <a href="">
-                  <div class="social-button button-fb"></div>
+                <a href="" aria-label="Фейсбук">
+                  <div class="social-button button-fb" aria-hidden="true"></div>
                 </a>
                </li>
               <li>
-                <a href="">
-                  <div class="social-button button-insta"></div>
+                <a href="" aria-label="Инстаграм">
+                  <div class="social-button button-insta" aria-hidden="true"></div>
                 </a>
               </li>
             </ul>

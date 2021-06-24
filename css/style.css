@@ -74,6 +74,7 @@
 
     --basic-grey: #3D546F;
     --basic-greylight: #C5C5C5;
+    --grey-input: #B5B5B5;
 
     --basic-background: #F1F5F7;
     --basic-white: #ffffff;
@@ -929,7 +930,7 @@
   text-align: center;
 }
 
-.product-cart:hover .product-cart-hover {
+.product-cart:hover .product-cart-hover, .product-cart:focus-within .product-cart-hover {
   opacity: 1;
 }
 
@@ -939,7 +940,7 @@
 
 .product-cart-hover__buy {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border: none;
   position: absolute;
@@ -954,12 +955,22 @@
   text-transform: uppercase;
   color: var(--basic-white);
   box-shadow: inset 0px -3px 0px var(--shadow-green);
+  padding-left: 55px;
+  cursor: pointer;
 }
 
 .product-cart-hover__buy::before {
-  content: url(../img/icons/icon-cart.svg);
+  content: "";
   opacity: 0.3;
-  margin-right: 8px;
+  background-image: url(../img/icons/icon-cart.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  margin-right: 14px;
 }
 
 .product-cart-hover__buy:hover, .product-cart-hover__buy:focus {
@@ -976,10 +987,11 @@
   align-items: center;
   border: none;
   position: absolute;
+  box-sizing: border-box;
   top: 86px;
   left: 41px;
-  width: 129px;
-  height: 32px;
+  width: 135px;
+  height: 38px;
   background-color: var(--basic-white);
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
@@ -988,6 +1000,7 @@
   color: var(--basic-blue);
   border: 3px solid var(--basic-green);
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .product-cart-hover__bookmarks:hover, .product-cart-hover__bookmarks:focus {
@@ -1044,19 +1057,6 @@
   margin-bottom: 70px;
 }
 
-.main-index__services_wrapper {
-  display: grid;
-  grid-template-columns: 240px 619px;
-  grid-template-rows: auto 283px;
-  column-gap: 80px;
-  row-gap: 70px;
-}
-
-.services__about {
-  grid-column: 1/3;
-  grid-row: 1/2;
-}
-
 .services__title {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
@@ -1066,9 +1066,15 @@
   margin-bottom: 22px;
 }
 
-.service-about__title {
-  color: var(--basic-blue);
-  margin-bottom: 28px;
+.services__paragraph {
+  margin-bottom: 70px;
+}
+
+.services__slider {
+  position: relative;
+  display: grid;
+  grid-template-columns: 240px 619px;
+  column-gap: 80px;
 }
 
 .services__list {
@@ -1076,7 +1082,6 @@
   position: relative;
   display: inline-block;
   grid-column: 1/2;
-  grid-row: 2/3;
 }
 
 .services__list::after {
@@ -1086,29 +1091,51 @@
   top: -50px;
 }
 
-.service-about {
+.services__slider-list {
+  list-style: none;
+  grid-column: 2/3;
+}
+
+.services__slide-title {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-blue);
+  margin-bottom: 28px;
+}
+
+.services__slide {
+  display: none;
+}
+
+.services__slide-current {
+  display: block;
+}
+
+.services__slider-item {
   width: 619px;
   height: 283px;
   background-repeat: no-repeat;
   background-position: right 20px;
   grid-column: 2/3;
-  grid-row: 2/3;
 }
 
-.service-delivery {
+.services__slide-delivery {
   background-image: url(../img/services/delivery.png);
 }
 
-.service-guarantee {
+.services__slide-guarantee {
   background-image: url(../img/services/guarantee.png);
 }
 
-.service-credit {
+.services__slide-credit {
   background-image: url(../img/services/credit.png);
 }
 
-.serives__no-display {
-  display: none;
+.services__slide-credit-paragraph {
+  margin-bottom: 26px;
 }
 
 /* About company */
@@ -1298,6 +1325,7 @@
   background-image: url("../img/icons/icon-checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.6;
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -1310,6 +1338,11 @@
   background-image: url("../img/icons/icon-checkbox-mark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.6;
+}
+
+.filters-item-provider:hover label::before, .filters-item-provider:hover label::after, .filters-item-provider:focus-within label::before, .filters-item-provider:focus-within label::after {
+  opacity: 1;
 }
 
 .filter-input-radio + label::before {
@@ -1332,6 +1365,14 @@
   height: 12px;
   background-color: var(--basic-greylight);
   border-radius: 50%;
+}
+
+.filters__set-power:hover label::before, .filters__set-power:focus-within label::before {
+  border-color: var(--grey-input);
+}
+
+.filters__set-power:hover label::after, .filters__set-power:focus-within label::after {
+  background-color: var(--grey-input);
 }
 
 .filters__form ul {
