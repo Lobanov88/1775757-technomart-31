@@ -485,7 +485,7 @@
 }
 
 .main-login__logout-list a:first-child {
-  padding-left: 15px;
+  padding-left: 17px;
 }
 
 .logout-list__img-user {
@@ -501,7 +501,7 @@
 }
 
 .logout-list__img-logout {
-  margin-left: 20px;
+  margin-left: 7px;
 }
 
 .logout-list__user-logout:hover .logout-list__img-logout-path, .logout-list__user-logout:focus .logout-list__img-logout-path {
@@ -520,6 +520,7 @@
   width: 299px;
   box-sizing: border-box;
   padding: 0 45px;
+  padding-top: 2px;
 }
 
 .order-list__item {
@@ -1053,9 +1054,10 @@
 
 .main-index__services {
   background-color: var(--basic-background);
-  padding-top: 68px;
+  padding-top: 66px;
+  padding-left: 2px;
   padding-bottom: 4px;
-  margin-bottom: 70px;
+  margin-bottom: 68px;
 }
 
 .services__title {
@@ -1064,7 +1066,7 @@
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 
 .services__paragraph {
@@ -1146,6 +1148,7 @@
   grid-template-columns: 460px 300px;
   column-gap: 180px;
   margin-bottom: 70px;
+  padding-left: 2px;
 }
 
 .about-company__title, .main-contacts__title {
@@ -1153,7 +1156,7 @@
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   font-weight: 400;
 }
 
@@ -1162,7 +1165,11 @@
 }
 
 .about-company__paragraph-map {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
+}
+
+.about-company__delivery {
+  margin-bottom: 3px;
 }
 
 .about-company__transporters-list {
@@ -1193,11 +1200,11 @@
 }
 
 .about-company__transporters-item:nth-child(1)::before {
-  top: 15px;
+  top: 13px;
 }
 
 .about-company__transporters-item:nth-child(2)::before {
-  top: 12px;
+  top: 11px;
 }
 
 .about-company__transporters-item:last-child {
@@ -1207,6 +1214,10 @@
 .about-company__mini-map {
   display: block;
   margin-bottom: 18px;
+}
+
+.about-company__title-name {
+  margin-left: -3px;
 }
 
 /* Main Catalog */
@@ -1223,7 +1234,7 @@
   line-height: 18px;
   text-transform: uppercase;
   position: absolute;
-  top: -38px;
+  top: -39px;
 }
 
 .catalog__breadcrumbs a {
@@ -1232,11 +1243,17 @@
 
 .breadcrumbs__item {
   display: inline;
-  margin-right: 14px;
+  margin-right: 13px;
 }
 
 .breadcrumbs__item a::after {
-  content: url(../img/icons/icon-right-small.svg);
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 15px;
+  background-image: url(../img/icons/icon-right-small.svg);
+  background-position: 1px 3px;
+  background-repeat: no-repeat;
   margin-left: 13px;
 }
 
@@ -1435,7 +1452,6 @@
   height: 38px;
   padding: 10px;
   padding-top: 12px;
-  padding-left: 20px;
   text-align: center;
   border: none;
   border-radius: 5px;
@@ -1808,6 +1824,7 @@ a.pagination__button-current {
 
 .main-footer__feedback-wrapper {
   grid-column: 3/4;
+  padding-left: 2px;
 }
 
 .main-footer__development-wrapper {
