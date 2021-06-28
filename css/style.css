@@ -1874,7 +1874,6 @@ a.pagination__button-current {
 .modal {
   border-top: solid var(--basic-red) 7px;
   box-sizing: border-box;
-  position: relative;
   box-shadow: 0px 20px 40px rgba(41, 52, 73, 0.75);
   position: fixed;
   top: 0;
@@ -1892,8 +1891,9 @@ a.pagination__button-current {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  top: auto;
-  bottom: 352px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   display: none;
 }
@@ -1922,8 +1922,9 @@ a.pagination__button-current {
   width: 943px;
   height: 449px;
   padding: 0;
-  top: 255px;
-  bottom: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   display: none;
 }
@@ -1989,8 +1990,10 @@ a.pagination__button-current {
   width: 620px;
   text-align: center;
   padding-top: 66px;
-  top: 255px;
-  bottom: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 282px;
 
   display: none;
 }
@@ -2049,11 +2052,11 @@ a.pagination__button-current {
 
 .modal-show {
   display: block;
-  animation: bounce 0.6s;
+  animation: bounce 1.5s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  animation: shake 1.5s;
 }
 
 /* Decoration */
@@ -2210,37 +2213,33 @@ a.pagination__button-current {
     transform: translateY(-2000px);
   }
 
-  70% {
+  50% {
     transform: translateY(30px);
   }
 
-  90% {
+  75% {
     transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
   }
 }
 
 @keyframes shake {
-  0%,
+  /* 0%,
   100% {
     transform: translateX(0);
-  }
+  } */
 
   10%,
   30%,
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translateX(-5px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translateX(5px);
   }
 }
