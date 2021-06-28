@@ -1891,9 +1891,8 @@ a.pagination__button-current {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 125px;
+  bottom: auto;
 
   display: none;
 }
@@ -1922,9 +1921,8 @@ a.pagination__button-current {
   width: 943px;
   height: 449px;
   padding: 0;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 125px;
+  bottom: auto;
 
   display: none;
 }
@@ -1990,9 +1988,8 @@ a.pagination__button-current {
   width: 620px;
   text-align: center;
   padding-top: 66px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 125px;
+  bottom: auto;
   height: 282px;
 
   display: none;
